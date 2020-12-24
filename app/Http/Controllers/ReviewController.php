@@ -16,9 +16,9 @@ class ReviewController extends Controller
      */
     public function index($id)
     {
-        //return ReviewResource::collection(Product::find($id)->reviews);
+        return ReviewResource::collection(Product::find($id)->reviews);
         //return Product::find($id)->reviews;
-        return Product::paginate(5);
+        //return Product::paginate(5);
     }
 
     /**
